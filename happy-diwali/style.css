@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin:0;
+    font-family: 'Salsa' , cursive;
+}
+.hero-section{
+    /* min-height: 100vh; */
+    background-color: #F99501; /* when page loaded so white bc visible  */
+    background-image: url(/images/orange-backdrop\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.jhalar{
+    width:220px;
+    margin-bottom: -200px; /* chdhe nh niche ka content ispr */
+}
+.para-audio{
+    margin-left: 15rem;
+}
+.hero-section p{
+    font-size: 46px;
+    max-width: 550px; /* as it was taking the whole line so it will make it smaller width od texts content */
+}
+audio::-webkit-media-controls-panel{
+    background-color: #F8D8A4;
+}
+.audio-container{
+    background-color: #F8D8A4;
+    max-width: max-content; /* jitna content utna width */
+    border-radius: 45px;
+    display:flex; /* to make the audio in center of the width */
+    align-items: center;
+    justify-content: center;
+    padding-left:20px;
+}
+/* @media (width < 840px){
+    .second-deepak{
+        display: none;
+    }
+} */
+.lakshmi-ganesha-section{
+    background-color: #F99501;
+    padding-block: 1em;
+    padding-inline: 1rem;
+}
+
+.lakshmi-ganesha-img{
+    max-width: 900px;
+    width: 100%;
+    display: block;/*  to centr */
+    margin-inline: auto; /*  to left right centr */
+}
+.horizontal-divider{
+    display: flex;
+    align-items: center; /* verticllly center */
+    gap: 12px;
+    max-width: 800px; /* total of lines */
+    margin-inline: auto; /* lft righty centr */
+    margin-bottom: 2rem;
+
+}
+.horizontal-line{
+    height: 2px;
+    width:468px;
+    background-color: #F8D8A4;
+}
+.circle{
+    width:10px;
+    height:10px;
+    background-color: #F8D8A4;
+    border-radius: 50%;
+    flex-shrink: 0;   /* isko shrink nh hona h parent se aise se rhe*/
+} 
+    .lakshmi-ganesha-section h2{
+    font-family: 'Style Script', cursive;
+    font-size: 54px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.white-card-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.white-card{
+    background-color: white;
+    max-width: 500px;
+    padding: 4rem;
+    border-radius: 24px;
+    /* display: inline-block; dusre elemt ko aane ka jgh dega s ye block level tha na but ye shi se nh ayga isly dono k ek same container me rkho now instead it use flex*/
+}
+.white-card p{
+    font-size: 2rem;
+}
+.little-girl{
+    max-width: 260px;
+    margin-left: -5rem; /* ldki chdhane k lye card pr */
+}
+.lakshmi-ganesha-card{
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: 24px;
+    max-width: 772px;/* as dducting pdding 128px while ignoring borderboc so adjusting */
+    display:flex;
+    margin-inline: auto; /* to center card */
+
+}
+.lakshmi-ganesha-card img{
+    width:50%;
+}
+.thank-you-text{
+    max-width: 900px;
+    width:100%;
+    margin-inline: auto;
+
+}
+.thank-you-text h2{
+    text-align: left;
+}
+.my-name{
+    text-align: right;
+    font-size: 14px;
+}
+@media (max-width: 840px){
+    .first-deepak{
+        display:block;
+        margin-left: auto;
+    }
+    .second-deepak,
+    .soulful,
+    .zigzag{
+        display:none;
+    }
+.para-audio{
+    margin-left: 1rem;
+}
+.jhalar{
+    margin-bottom: 0;
+}
+.hero-section p{
+    font-size: 32px;
+}
+.white-card p{
+    font-size: 1.25rem ;
+}
+.little-girl{
+    max-width: 260px;
+}
+.white-card{
+    padding-block: 1rem;
+    padding-left: 2rem; /* ldki na chde text pr */
+}
+.lakshmi-ganesha-card{
+    padding: 2rem;
+}
+}
+@media (max-width: 540px){
+    .hero-section p{
+        font-size: 24px;
+    }
+    .first-deepak{
+        width:100%; /* itna max width me responsive hone */
+        max-width:300px;
+    }
+    .lakshmi-ganesha-section h2{
+        font-size: 32px;
+    }
+    .white-card p{
+        font-size: 1rem;
+    }
+}
